@@ -5,14 +5,13 @@ using UnityEngine.XR.Interaction.Toolkit;
 public class SteeringWheel : XRBaseInteractable
 {
     [SerializeField] private Transform wheelTransform;
-
-
-public GameObject Vehicle;
+    public GameObject Vehicle;
     private Rigidbody VehicleRigidBody;
 
     public float currentSteeringWheelRotation = 0;
+    //private float SteeringWheelAxis = -transform.rotation.eulerAngles.z;
 
-    private float turnDampening = 9999;
+    private float turnDampening = 100;
 
     // Start is called before the first frame update
     void Start()
@@ -21,7 +20,7 @@ public GameObject Vehicle;
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         TurnVehicle();
 
@@ -30,22 +29,24 @@ public GameObject Vehicle;
 
     private void TurnVehicle()
     {
-        //Turns Wheels compared to the steering wheel
-        var turn = -transform.rotation.eulerAngles.z;
-        if(turn < -350)
+        //Turns Vehicle compared to the steering wheel
+        //float turn = transform.rotation.eulerAngles.z;
+        float turn = wheelTransform.rotation.eulerAngles.z;
+        /*if(turn < -350)
         {
-            turn = turn + 360;
-        }
+            turn += 360;
+            Debug.Log("penis");
+        }*/
         
-        VehicleRigidBody.MoveRotation(Quaternion.RotateTowards(Vehicle.transform.rotation, Quaternion.Euler(0, turn, 0), Time.deltaTime * turnDampening));
+        VehicleRigidBody.MoveRotation(Quaternion.RotateTowards(Vehicle.transform.rotation, /*transform.rotation*/Quaternion.Euler(0, turn, 0), Time.deltaTime * turnDampening));
     }
+
 
     public UnityEvent<float> OnWheelRotated;
 
     private float currentAngle = 0.0f;
 
     private Vector3 localPoint;
-
 
     protected override void OnSelectEntered(SelectEnterEventArgs args)
     {
@@ -77,7 +78,7 @@ public GameObject Vehicle;
 
         // Apply difference in angle to wheel
         float angleDifference = currentAngle - totalAngle;
-        wheelTransform.Rotate(transform.right, -angleDifference, Space.World);
+        wheelTransform.Rotate(transform.forward, -angleDifference, Space.World);
             
         // Store angle for next process
         currentAngle = totalAngle;
@@ -91,7 +92,7 @@ public GameObject Vehicle;
         // Combine directions of current interactors
         foreach (IXRSelectInteractor interactor in interactorsSelecting)
         {
-            //localPoint = FindLocalPoint(interactor.transform.position);
+            localPoint = FindLocalPoint(interactor.transform.position);
             Vector2 direction = FindLocalPoint(interactor.transform.position);
             totalAngle += ConvertToAngle(direction) * FindRotationSensitivity();
         }
