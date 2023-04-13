@@ -31,7 +31,7 @@ public class SteeringWheel : XRBaseInteractable
     {
         //Turns Vehicle compared to the steering wheel
         //float turn = transform.rotation.eulerAngles.z;
-        float turn = wheelTransform.rotation.eulerAngles.z;
+        float turn = -wheelTransform.rotation.eulerAngles.z;
         /*if(turn < -350)
         {
             turn += 360;
