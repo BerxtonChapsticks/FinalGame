@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Out Of Bounds
   - PlayerHand
+  - Ship
   layers:
   - Default
   - TransparentFX

@@ -16,7 +16,7 @@ public class MoveBoat : MonoBehaviour
     {
         if(switchHit.on == true)
         {
-            var step = transform.forward.normalized * 2  * Time.fixedDeltaTime;
+            var step = transform.right.normalized * 2  * Time.fixedDeltaTime;
             rigidbody.MovePosition(transform.position + step);
         }
     }
