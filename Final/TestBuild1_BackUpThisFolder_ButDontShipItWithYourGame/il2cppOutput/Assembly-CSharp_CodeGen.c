@@ -86,43 +86,57 @@ extern void BoatTurning_Update_mD68DBC9D02A17F67B61BA4143D9D911A11BB25FD (void);
 extern void BoatTurning_TurnVehicle_m57626DDC8A881D5237870A16EB5F4EE5EC2FAB75 (void);
 // 0x00000025 System.Void BoatTurning::.ctor()
 extern void BoatTurning__ctor_m5E92FEC5BDFFFE007E5227B29AFDCD5E64768282 (void);
-// 0x00000026 System.Void SteeringWheel::Start()
+// 0x00000026 System.Void MoveBoat::Start()
+extern void MoveBoat_Start_m42EAF7CB88793CD00443E380D6150B981721B28E (void);
+// 0x00000027 System.Void MoveBoat::Update()
+extern void MoveBoat_Update_m593A48AB3147001DD921B3C9297A3B0CBABE2F12 (void);
+// 0x00000028 System.Void MoveBoat::.ctor()
+extern void MoveBoat__ctor_m5481C69D381295A552F379065806303DD7C1626B (void);
+// 0x00000029 System.Void SteeringWheel::Start()
 extern void SteeringWheel_Start_m7A16A3AD2DC736C0DD34E96D98D59730C74809BD (void);
-// 0x00000027 System.Void SteeringWheel::Update()
-extern void SteeringWheel_Update_mAA1D3DFA1FDD3B20335DEE647FD2A831041EE7E1 (void);
-// 0x00000028 System.Void SteeringWheel::TurnVehicle()
+// 0x0000002A System.Void SteeringWheel::FixedUpdate()
+extern void SteeringWheel_FixedUpdate_m03FE65A66D9ECBD7E35C92BD1AC88F8801269241 (void);
+// 0x0000002B System.Void SteeringWheel::TurnVehicle()
 extern void SteeringWheel_TurnVehicle_m252A9A8FEFFE507C7F01FF393DEE5627D22525F3 (void);
-// 0x00000029 System.Void SteeringWheel::OnSelectEntered(UnityEngine.XR.Interaction.Toolkit.SelectEnterEventArgs)
+// 0x0000002C System.Void SteeringWheel::OnSelectEntered(UnityEngine.XR.Interaction.Toolkit.SelectEnterEventArgs)
 extern void SteeringWheel_OnSelectEntered_m037628D1BA0237484395D8A6624FD230BDDFA9DB (void);
-// 0x0000002A System.Void SteeringWheel::OnSelectExited(UnityEngine.XR.Interaction.Toolkit.SelectExitEventArgs)
+// 0x0000002D System.Void SteeringWheel::OnSelectExited(UnityEngine.XR.Interaction.Toolkit.SelectExitEventArgs)
 extern void SteeringWheel_OnSelectExited_mE5C929103FFA88F2380F1C6D538718D7DC6AD64E (void);
-// 0x0000002B System.Void SteeringWheel::ProcessInteractable(UnityEngine.XR.Interaction.Toolkit.XRInteractionUpdateOrder/UpdatePhase)
+// 0x0000002E System.Void SteeringWheel::ProcessInteractable(UnityEngine.XR.Interaction.Toolkit.XRInteractionUpdateOrder/UpdatePhase)
 extern void SteeringWheel_ProcessInteractable_m2498F8ECC06D34235F0AA281AB48CA7B32F015B1 (void);
-// 0x0000002C System.Void SteeringWheel::RotateWheel()
+// 0x0000002F System.Void SteeringWheel::RotateWheel()
 extern void SteeringWheel_RotateWheel_m8CB05E7B38A2EC7B8202B5FAAB84DBEA9989DE76 (void);
-// 0x0000002D System.Single SteeringWheel::FindWheelAngle()
+// 0x00000030 System.Single SteeringWheel::FindWheelAngle()
 extern void SteeringWheel_FindWheelAngle_m1E80D7831B8BE21AD6D3ACB9C4624CEDFA83CCD1 (void);
-// 0x0000002E UnityEngine.Vector2 SteeringWheel::FindLocalPoint(UnityEngine.Vector3)
+// 0x00000031 UnityEngine.Vector2 SteeringWheel::FindLocalPoint(UnityEngine.Vector3)
 extern void SteeringWheel_FindLocalPoint_mC0575F360286DF97874FE78E21536677F66B4C90 (void);
-// 0x0000002F System.Single SteeringWheel::ConvertToAngle(UnityEngine.Vector2)
+// 0x00000032 System.Single SteeringWheel::ConvertToAngle(UnityEngine.Vector2)
 extern void SteeringWheel_ConvertToAngle_m7DB6FD8BFDA6915E9E2BC7FD26ADCC8BD0A6F546 (void);
-// 0x00000030 System.Single SteeringWheel::FindRotationSensitivity()
+// 0x00000033 System.Single SteeringWheel::FindRotationSensitivity()
 extern void SteeringWheel_FindRotationSensitivity_m4989A00C80BD8DE46E743E8A5508BA519667E1F9 (void);
-// 0x00000031 System.Void SteeringWheel::OnDrawGizmos()
+// 0x00000034 System.Void SteeringWheel::OnDrawGizmos()
 extern void SteeringWheel_OnDrawGizmos_mE0A6864461B97F76F92F766F94E3AB804AC0BB51 (void);
-// 0x00000032 System.Void SteeringWheel::.ctor()
+// 0x00000035 System.Void SteeringWheel::.ctor()
 extern void SteeringWheel__ctor_m52080E46937E43BB95BE548753F3A44C8EB0E749 (void);
-// 0x00000033 System.Void TriggerSFX::OnTriggerEnter(UnityEngine.Collider)
+// 0x00000036 System.Void SwitchControl::Start()
+extern void SwitchControl_Start_m99236A4B6EA3F98762896EACCBA37998D728B84D (void);
+// 0x00000037 System.Void SwitchControl::Update()
+extern void SwitchControl_Update_m75D822246B6BBA018CC01614B0FC27B9DB49BF63 (void);
+// 0x00000038 System.Void SwitchControl::OnTriggerEnter(UnityEngine.Collider)
+extern void SwitchControl_OnTriggerEnter_m5CF1E71763FAA67A56BB873F75529BFC9821B4E5 (void);
+// 0x00000039 System.Void SwitchControl::.ctor()
+extern void SwitchControl__ctor_mBB446F1A43CF696C7A1FA3C41D1B2E8C8BA4869F (void);
+// 0x0000003A System.Void TriggerSFX::OnTriggerEnter(UnityEngine.Collider)
 extern void TriggerSFX_OnTriggerEnter_mAC4512AAF4A5A5972662EDDD8A30D832EEF0AA13 (void);
-// 0x00000034 System.Void TriggerSFX::.ctor()
+// 0x0000003B System.Void TriggerSFX::.ctor()
 extern void TriggerSFX__ctor_mE7DB1C907F311BCD841F6BFB0CC32B4C96FC9B72 (void);
-// 0x00000035 System.Void LookCamera::Start()
+// 0x0000003C System.Void LookCamera::Start()
 extern void LookCamera_Start_mE9289E1E6CB37C5254B8BCAA97DEF20F5B8E3D7B (void);
-// 0x00000036 System.Void LookCamera::Update()
+// 0x0000003D System.Void LookCamera::Update()
 extern void LookCamera_Update_m68E69B1B5A7045536596C77570DDBB111AC6DEE0 (void);
-// 0x00000037 System.Void LookCamera::.ctor()
+// 0x0000003E System.Void LookCamera::.ctor()
 extern void LookCamera__ctor_m14F0C4DDA1FF55558C400791F6361D35EA975CB4 (void);
-static Il2CppMethodPointer s_methodPointers[55] = 
+static Il2CppMethodPointer s_methodPointers[62] = 
 {
 	SkyboxCamera_Start_mF11568CD7D4C734C7F24B38DBEACFD788BDB225C,
 	SkyboxCamera_Update_m1400FFF7BE6E1D94B8643B506E02FFE83E4D4AF7,
@@ -161,8 +175,11 @@ static Il2CppMethodPointer s_methodPointers[55] =
 	BoatTurning_Update_mD68DBC9D02A17F67B61BA4143D9D911A11BB25FD,
 	BoatTurning_TurnVehicle_m57626DDC8A881D5237870A16EB5F4EE5EC2FAB75,
 	BoatTurning__ctor_m5E92FEC5BDFFFE007E5227B29AFDCD5E64768282,
+	MoveBoat_Start_m42EAF7CB88793CD00443E380D6150B981721B28E,
+	MoveBoat_Update_m593A48AB3147001DD921B3C9297A3B0CBABE2F12,
+	MoveBoat__ctor_m5481C69D381295A552F379065806303DD7C1626B,
 	SteeringWheel_Start_m7A16A3AD2DC736C0DD34E96D98D59730C74809BD,
-	SteeringWheel_Update_mAA1D3DFA1FDD3B20335DEE647FD2A831041EE7E1,
+	SteeringWheel_FixedUpdate_m03FE65A66D9ECBD7E35C92BD1AC88F8801269241,
 	SteeringWheel_TurnVehicle_m252A9A8FEFFE507C7F01FF393DEE5627D22525F3,
 	SteeringWheel_OnSelectEntered_m037628D1BA0237484395D8A6624FD230BDDFA9DB,
 	SteeringWheel_OnSelectExited_mE5C929103FFA88F2380F1C6D538718D7DC6AD64E,
@@ -174,13 +191,17 @@ static Il2CppMethodPointer s_methodPointers[55] =
 	SteeringWheel_FindRotationSensitivity_m4989A00C80BD8DE46E743E8A5508BA519667E1F9,
 	SteeringWheel_OnDrawGizmos_mE0A6864461B97F76F92F766F94E3AB804AC0BB51,
 	SteeringWheel__ctor_m52080E46937E43BB95BE548753F3A44C8EB0E749,
+	SwitchControl_Start_m99236A4B6EA3F98762896EACCBA37998D728B84D,
+	SwitchControl_Update_m75D822246B6BBA018CC01614B0FC27B9DB49BF63,
+	SwitchControl_OnTriggerEnter_m5CF1E71763FAA67A56BB873F75529BFC9821B4E5,
+	SwitchControl__ctor_mBB446F1A43CF696C7A1FA3C41D1B2E8C8BA4869F,
 	TriggerSFX_OnTriggerEnter_mAC4512AAF4A5A5972662EDDD8A30D832EEF0AA13,
 	TriggerSFX__ctor_mE7DB1C907F311BCD841F6BFB0CC32B4C96FC9B72,
 	LookCamera_Start_mE9289E1E6CB37C5254B8BCAA97DEF20F5B8E3D7B,
 	LookCamera_Update_m68E69B1B5A7045536596C77570DDBB111AC6DEE0,
 	LookCamera__ctor_m14F0C4DDA1FF55558C400791F6361D35EA975CB4,
 };
-static const int32_t s_InvokerIndices[55] = 
+static const int32_t s_InvokerIndices[62] = 
 {
 	6756,
 	6756,
@@ -222,6 +243,9 @@ static const int32_t s_InvokerIndices[55] =
 	6756,
 	6756,
 	6756,
+	6756,
+	6756,
+	6756,
 	5335,
 	5335,
 	5304,
@@ -231,6 +255,10 @@ static const int32_t s_InvokerIndices[55] =
 	4853,
 	6693,
 	6756,
+	6756,
+	6756,
+	6756,
+	5335,
 	6756,
 	5335,
 	6756,
@@ -242,7 +270,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	55,
+	62,
 	s_methodPointers,
 	0,
 	NULL,
