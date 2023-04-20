@@ -3575,8 +3575,8 @@ IL_002a:
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BoatTurning__ctor_m5E92FEC5BDFFFE007E5227B29AFDCD5E64768282 (BoatTurning_tCD2C24BF44A355CDF57291E99896031F820CDA3C* __this, const RuntimeMethod* method) 
 {
 	{
-		// private float turnDampening = 9999;
-		__this->___turnDampening_7 = (9999.0f);
+		// private float turnDampening = 10;
+		__this->___turnDampening_7 = (10.0f);
 		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
 		return;
 	}
@@ -3608,8 +3608,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MoveBoat_Start_m42EAF7CB88793CD00443E380
 		return;
 	}
 }
-// System.Void MoveBoat::Update()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MoveBoat_Update_m593A48AB3147001DD921B3C9297A3B0CBABE2F12 (MoveBoat_t54EFBE42B612BDE7CC88A8276259E2E16BBEDF34* __this, const RuntimeMethod* method) 
+// System.Void MoveBoat::FixedUpdate()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MoveBoat_FixedUpdate_m9B17337335C7BAD67DBB4AB71AF37A8091CB39F1 (MoveBoat_t54EFBE42B612BDE7CC88A8276259E2E16BBEDF34* __this, const RuntimeMethod* method) 
 {
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
 	memset((&V_0), 0, sizeof(V_0));
@@ -4149,8 +4149,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SteeringWheel_OnDrawGizmos_mE0A6864461B9
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SteeringWheel__ctor_m52080E46937E43BB95BE548753F3A44C8EB0E749 (SteeringWheel_t95EF3D325E812BC6842FC8F12329A1B72C90AF8D* __this, const RuntimeMethod* method) 
 {
 	{
-		// private float turnDampening = 100;
-		__this->___turnDampening_50 = (100.0f);
+		// private float turnDampening = 10;
+		__this->___turnDampening_50 = (10.0f);
 		XRBaseInteractable__ctor_m0B36974579D0C9F2799C4C5DE77B136C291247F4(__this, NULL);
 		return;
 	}

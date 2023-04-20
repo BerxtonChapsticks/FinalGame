@@ -11,7 +11,7 @@ public class BoatTurning : MonoBehaviour
 
     public float currentSteeringWheelRotation = 0;
 
-    private float turnDampening = 9999;
+    private float turnDampening = 10;
 
     // Start is called before the first frame update
     void Start()

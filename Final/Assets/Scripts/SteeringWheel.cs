@@ -11,7 +11,7 @@ public class SteeringWheel : XRBaseInteractable
     public float currentSteeringWheelRotation = 0;
     //private float SteeringWheelAxis = -transform.rotation.eulerAngles.z;
 
-    private float turnDampening = 100;
+    private float turnDampening = 10;
 
     // Start is called before the first frame update
     void Start()

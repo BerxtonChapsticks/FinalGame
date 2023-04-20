@@ -12,7 +12,7 @@ public class MoveBoat : MonoBehaviour
         rigidbody = GetComponent<Rigidbody>();
     }
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         if(switchHit.on == true)
         {
