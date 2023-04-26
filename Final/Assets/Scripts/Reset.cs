@@ -21,7 +21,7 @@ public class Reset : MonoBehaviour
    if (coll.gameObject.tag == "Ship")
    {
  
-   Application.LoadLevel(Application.loadedLevel);
+   //Application.LoadLevel(Application.loadedLevel);
    }
 }
 }
