@@ -16,12 +16,12 @@ public class Reset : MonoBehaviour
         
     }
 
-    void OnCollisionEnter(Collision coll)
+    void OnTriggerEnter(Collider other)
 {
-   if (coll.gameObject.tag == "Ship")
+   if (other.CompareTag("Player"))
    {
  
-   //Application.LoadLevel(Application.loadedLevel);
+   Application.LoadLevel(Application.loadedLevel);
    }
 }
 }

@@ -14,6 +14,10 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         //HealthNum.text = "Health : " + currentHealth;
+        if( GameManager.gameManger.shipHealth.Health <= 0)
+        {
+            Application.LoadLevel(Application.loadedLevel);
+        }
     }
     
     void Awake()

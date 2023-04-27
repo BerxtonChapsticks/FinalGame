@@ -40,7 +40,7 @@ public class PlayerBehaviour : MonoBehaviour
             //shipRigidbody.AddForce(-transform.forward, ForceMode.Impulse);
         }
 
-        HealthNum.text = "Health : " + GameManager.gameManger.shipHealth.Health;
+        //HealthNum.text = "Health : " + GameManager.gameManger.shipHealth.Health;
 
 
         if (Input.GetKeyDown(KeyCode.Space))
