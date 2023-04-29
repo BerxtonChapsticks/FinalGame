@@ -659,6 +659,11 @@ struct InvalidOperationException_t5DDE4D49B7405FAAB1E4576F4715A42A3FAD4BAB  : pu
 {
 };
 
+// UnityEngine.Renderer
+struct Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF  : public Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3
+{
+};
+
 // UnityEngine.VFX.VFXSpawnerCallbacks
 struct VFXSpawnerCallbacks_t047450F52C1C8F2F74DF560269C803FCD61AF9F7  : public ScriptableObject_tB3BFDB921A1B1795B38A5417D3B97A89A140436A
 {
@@ -690,6 +695,11 @@ struct Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184_StaticFields
 	CameraCallback_t844E527BFE37BC0495E7F67993E43C07642DA9DD* ___onPreRender_5;
 	// UnityEngine.Camera/CameraCallback UnityEngine.Camera::onPostRender
 	CameraCallback_t844E527BFE37BC0495E7F67993E43C07642DA9DD* ___onPostRender_6;
+};
+
+// UnityEngine.VFX.VFXRenderer
+struct VFXRenderer_t313AEBF3A8EE9FB39B2D5E614E10BE62B578F42E  : public Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF
+{
 };
 
 // UnityEngine.VFX.VisualEffect
@@ -2182,6 +2192,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VisualEffect_SetVector4_Injected_m798157
 	_il2cpp_icall_func = (VisualEffect_SetVector4_Injected_m798157124FFD71E650FB57F24F8BD2E3D45EAF5E_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.VFX.VisualEffect::SetVector4_Injected(System.Int32,UnityEngine.Vector4&)");
 	_il2cpp_icall_func(__this, ___nameID0, ___v1);
 }
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif

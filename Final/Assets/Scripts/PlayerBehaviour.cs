@@ -45,7 +45,7 @@ public class PlayerBehaviour : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            ShipTakeDmg(20);
+            ShipTakeDmg(1);
             Debug.Log(GameManager.gameManger.shipHealth.Health);
         }
     }

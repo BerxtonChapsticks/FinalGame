@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class ExplodeBarrels : MonoBehaviour
 {
+    public Object Rocks;
+
+    public AudioSource Explosion;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -19,9 +23,10 @@ public class ExplodeBarrels : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Bullet"))
-        {
-            Destroy(this.gameObject);
+        {   Destroy(Rocks,2);
+            Destroy(this.gameObject,1);
             Debug.Log("reload");
+            Explosion.Play();
         }
     }
 
