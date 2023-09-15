@@ -55,6 +55,7 @@ public class GunScript : MonoBehaviour
             rounds--;
             //SetBatteryMeter();
             Debug.Log(rounds);
+            fireSound.pitch = (Random.Range(0.95f, 1.05f));
             fireSound.Play();
         }
     }
@@ -67,6 +68,7 @@ public class GunScript : MonoBehaviour
             rounds++;
             Debug.Log(rounds);
             //SetBatteryMeter();
+            reloadSound.pitch = (Random.Range(0.95f, 1.05f));
             reloadSound.Play();
         }
     }
